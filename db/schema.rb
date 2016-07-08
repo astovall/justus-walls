@@ -11,6 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20160705234634) do
+
+  create_table "users", force: :cascade do |t|
+=======
 ActiveRecord::Schema.define(version: 20160706193955) do
 
   create_table "users", force: :cascade do |t|
@@ -34,10 +39,13 @@ ActiveRecord::Schema.define(version: 20160706193955) do
   create_table "wall_memberships", force: :cascade do |t|
     t.integer  "wall_id"
     t.integer  "user_id"
+>>>>>>> 587b070f734f8fd99adc3d88448bac63663a3a01
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
+=======
   add_index "wall_memberships", ["user_id"], name: "index_wall_memberships_on_user_id"
   add_index "wall_memberships", ["wall_id"], name: "index_wall_memberships_on_wall_id"
 
@@ -48,4 +56,5 @@ ActiveRecord::Schema.define(version: 20160706193955) do
     t.datetime "updated_at",  null: false
   end
 
+>>>>>>> 587b070f734f8fd99adc3d88448bac63663a3a01
 end

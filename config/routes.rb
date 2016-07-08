@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   resources :walls
   get 'pages/home'
 
